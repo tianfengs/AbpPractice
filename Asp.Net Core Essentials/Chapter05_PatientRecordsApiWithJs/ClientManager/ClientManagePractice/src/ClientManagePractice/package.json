@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-less": "3.3.0",
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0"
+  }
+}

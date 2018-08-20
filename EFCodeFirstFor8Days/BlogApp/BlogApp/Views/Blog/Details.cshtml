@@ -1,0 +1,123 @@
+﻿@using BlogApp.Models
+@model BlogApp.Models.BlogDetailViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Title</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <strong>@Html.DisplayNameFor(model => model.CategoryName)</strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+
+        <dt>
+            <strong>@Html.DisplayNameFor(model => model.AuthorName)</strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorName)
+        </dd>
+
+        <dt>
+            <strong>@Html.DisplayNameFor(model => model.Title)</strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            <strong>@Html.DisplayNameFor(model => model.Body)</strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+
+        <dt>
+            <strong>@Html.DisplayNameFor(model => model.CreationTime)</strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationTime)
+        </dd>
+
+        <dt>
+            <strong>@Html.DisplayNameFor(model => model.UpdateTime)</strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <a href="" onclick="javascript:document.getElementById('myCommentDiv').style.display = ''; return false;">Comment</a>
+    @Html.ActionLink("Back to List", "Index", "Home")
+</p>
+<div id="myCommentDiv" style="display: none">
+    <textarea id="myComment" cols="100" rows="5"></textarea><br />
+    <button type="button" id="btnSubmit">发表评论</button>
+</div>
+<hr />
+<h3>评论列表</h3>
+
+@{
+    if (ViewData["Comments"] != null)
+    {
+        var comments = ViewData["Comments"] as List<CommentViewModel>;
+        <div id="CommentContainer">
+            @foreach (var comment in comments)
+            {
+                <div id="@string.Format("myCommentDiv{0}",comment.Id)">
+                    <hr />
+                    <span><strong>@comment.PosterName</strong></span> <span>评论于 @comment.CreationTime </span><br />
+                    <p>@comment.Message</p>
+                    <strong><a href="@Url.Action("Delete","Comment",new{id=comment.Id})" onclick="DeleteComment(this,@string.Format("myCommentDiv{0}",comment.Id)); return false;">删除</a></strong>
+                </div>
+            }
+        </div>
+    }
+
+}
+
+<script>
+    $(function () {
+        $('#btnSubmit').click(function () {
+            var comment = {
+                blogId: "@Model.Id",
+                body: $('#myComment').val()
+            };
+            $.post("/Comment/Create", comment, function (res) {
+                var jsonRes = JSON.parse(res);
+                var nextComment = "<div><hr /><span><strong>" + jsonRes.PosterName + "</strong></span> <span>评论于 " + new Date(jsonRes.CreationTime).toLocaleString() + " </span><br /><p>" + jsonRes.Body + "</p></div>";
+
+                $('#CommentContainer').append(nextComment);
+            });
+        });
+
+    });
+
+    function DeleteComment(targetATag,targetDiv) {
+        $.get(targetATag.href, function(res) {
+            if (res==='ok') {
+                //console.log($('#' + targetDiv));
+                //console.log(targetDiv);
+                $(targetDiv).remove();
+            } else {
+                alert("删除失败："+res);
+            }
+        });
+    }
+</script>

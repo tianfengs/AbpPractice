@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyPatternReview", "ProxyPatternReview\ProxyPatternReview.csproj", "{A7112BC4-E66C-4542-B740-B449C1F30A8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxyPractice", "DynamicProxyPractice\DynamicProxyPractice.csproj", "{AB524063-CD7C-4B46-9DC4-060963EB22EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeforeAndAfter", "BeforeAndAfter\BeforeAndAfter.csproj", "{1AC7A9C4-C609-4A60-8309-AE748FF51A97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7112BC4-E66C-4542-B740-B449C1F30A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7112BC4-E66C-4542-B740-B449C1F30A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7112BC4-E66C-4542-B740-B449C1F30A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7112BC4-E66C-4542-B740-B449C1F30A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB524063-CD7C-4B46-9DC4-060963EB22EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB524063-CD7C-4B46-9DC4-060963EB22EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB524063-CD7C-4B46-9DC4-060963EB22EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB524063-CD7C-4B46-9DC4-060963EB22EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC7A9C4-C609-4A60-8309-AE748FF51A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC7A9C4-C609-4A60-8309-AE748FF51A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC7A9C4-C609-4A60-8309-AE748FF51A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC7A9C4-C609-4A60-8309-AE748FF51A97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

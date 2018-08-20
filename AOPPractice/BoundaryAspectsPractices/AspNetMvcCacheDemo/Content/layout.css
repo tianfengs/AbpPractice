@@ -1,0 +1,62 @@
+﻿body {
+    background-color: lightpink;
+}
+
+.top-header {
+    height: 60px;
+    background-color: rgb(204, 0, 0);
+    text-align: center;
+    font-size: x-large
+}
+.header-text {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bolder;
+    color: wheat;
+}
+.navigator {
+    height: 50px;
+    background-color: rgb(240, 0, 0);
+    text-align: center;
+}
+.navigator ul {
+    margin-top: 0;
+}
+.navigator li{
+    line-height: 50px;
+    list-style-type: none;
+    padding:5px 20px;
+    color: whitesmoke;
+    display: inline;
+    border: 1px dashed wheat;
+    font-size: large;
+    font-weight: bold;
+}
+
+a {
+     text-decoration: none;
+    
+}
+.navigator a {
+    color: white;
+}
+
+.container {
+    width: 85%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.footer {
+    height: 30px;
+    border-top: 2px dotted red;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 3px;
+    width: 100%;
+    padding-top: 8px;
+}
+.select {
+    width: 100px;
+}

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BlogApp.Models.BlogViewModel>
+@{
+    ViewBag.Title = "主页面板";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>主页面板</h3>
+
+<hr/>
+
+<ol>
+    <li><a href="@Url.Action("Index","Category")">分类管理</a></li>
+    <li><a href="@Url.Action("Index","Blog")">博客管理</a></li>
+    <li><a href="@Url.Action("Index","Comment")">评论管理</a></li>
+</ol>
+
+<hr/>
+
+@if (Model!=null&&Model.Any())
+{
+    foreach (var blogViewModel in Model)
+    {
+        <h3>@blogViewModel.Title</h3>
+        <p>@blogViewModel.Overview</p>
+        <strong>博主：</strong>@blogViewModel.AuthorName
+        <strong>评论数：</strong>@blogViewModel.CommentsCount
+        <strong>发表日期：</strong>@blogViewModel.CreationTime
+        <strong>更新日期：</strong>@blogViewModel.UpdateTime
+        <a href="@Url.Action("Details","Blog",new{id=blogViewModel.Id})">阅读全文</a>
+        <hr/>
+    }
+}

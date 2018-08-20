@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RESTful Endpoints from Angular</title>
+</head>
+<body ng-app="patientsApp">
+    <h1>RESTful Endpoints from Angular</h1>
+    <div ng-controller="patientController">
+        <ul>
+            <li ng-repeat="p in patients">
+                Id:{{p.id}},Name:{{p.name}},socialSecurityNumber:{{p.socialSecurityNumber}}
+            </li>
+        </ul>
+    </div>
+    <script src="../lib/angular/angular.js"></script>
+    <script src="../js/ng-rest.js"></script>
+
+</body>
+</html>

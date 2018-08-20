@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiBoWithPostSharp", "WeiBoWithPostSharp\WeiBoWithPostSharp.csproj", "{5B391074-56B9-4872-8EA0-9F916C724F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiBoWithDynamicProxy", "WeiBoWithDynamicProxy\WeiBoWithDynamicProxy.csproj", "{70F29F65-0B4C-440C-9136-7D68FD3146B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransactionCastle", "DataTransactionCastle\DataTransactionCastle.csproj", "{8A782560-AF58-48CC-BFB4-E49BF4C749E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiboWindow", "WeiboWindow\WeiboWindow.csproj", "{72544D6B-DADC-4B77-AF12-599DE50FA69F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B391074-56B9-4872-8EA0-9F916C724F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B391074-56B9-4872-8EA0-9F916C724F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B391074-56B9-4872-8EA0-9F916C724F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B391074-56B9-4872-8EA0-9F916C724F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F29F65-0B4C-440C-9136-7D68FD3146B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F29F65-0B4C-440C-9136-7D68FD3146B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F29F65-0B4C-440C-9136-7D68FD3146B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F29F65-0B4C-440C-9136-7D68FD3146B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A782560-AF58-48CC-BFB4-E49BF4C749E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A782560-AF58-48CC-BFB4-E49BF4C749E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A782560-AF58-48CC-BFB4-E49BF4C749E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A782560-AF58-48CC-BFB4-E49BF4C749E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72544D6B-DADC-4B77-AF12-599DE50FA69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72544D6B-DADC-4B77-AF12-599DE50FA69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72544D6B-DADC-4B77-AF12-599DE50FA69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72544D6B-DADC-4B77-AF12-599DE50FA69F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

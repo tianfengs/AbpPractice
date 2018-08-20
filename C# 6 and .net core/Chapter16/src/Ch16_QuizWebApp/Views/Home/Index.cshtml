@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Ch16_QuizModels.Quiz>
+<div class="jumbotron">
+    <h1>Quiz Web App</h1>
+    <p class="lead">本人专注C# .Net 开发</p>
+    <p><a href="http://cnblogs.com/farb" class="btn btn-primary btn-lg">想学习更多关于C#的东西，请关注我的博客！ &raquo;</a></p>
+</div>
+@{
+    var x = 0;
+}
+<div class="row">
+    @foreach (var item in Model)
+    {
+        x++;
+        <div class="col-md-6 col-sm-12">
+            <h2>@item.Title</h2>
+            <p>@item.Description</p>
+            <p>
+                <a class="btn btn-default" href="@Url.Action("TakeQuiz", new { id = item.Id })">Take the @item.Title quiz &raquo;</a>
+            </p>
+        </div>
+        if (x % 2 == 0)
+        {
+            @:</div><div class="row">
+        }
+    }
+</div>

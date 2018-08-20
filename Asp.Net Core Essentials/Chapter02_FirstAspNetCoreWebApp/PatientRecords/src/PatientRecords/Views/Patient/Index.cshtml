@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Patient Index";
+}
+
+<h2>Patient Index, with Tag Helpers</h2>
+
+<ul>
+    @for (int i = 0; i < 10; i++)
+    {
+        <li>
+            <a asp-controller="Patient" asp-action="Details"
+               asp-route-id="@i" asp-route-name="Patient @i">
+                Patient # @i
+            </a>
+        </li>
+    }
+
+</ul> 

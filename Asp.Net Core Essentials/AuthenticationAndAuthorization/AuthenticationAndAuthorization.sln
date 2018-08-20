@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationAndAuthorization", "AuthenticationAndAuthorization\AuthenticationAndAuthorization.csproj", "{D761DCFE-9466-4918-B5E1-EFCE5F1D6126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtectionApp", "DataProtectionApp\DataProtectionApp.csproj", "{03AC07A3-9871-4867-ADE4-F6A49E97E466}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D761DCFE-9466-4918-B5E1-EFCE5F1D6126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D761DCFE-9466-4918-B5E1-EFCE5F1D6126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D761DCFE-9466-4918-B5E1-EFCE5F1D6126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D761DCFE-9466-4918-B5E1-EFCE5F1D6126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03AC07A3-9871-4867-ADE4-F6A49E97E466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03AC07A3-9871-4867-ADE4-F6A49E97E466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03AC07A3-9871-4867-ADE4-F6A49E97E466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03AC07A3-9871-4867-ADE4-F6A49E97E466}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

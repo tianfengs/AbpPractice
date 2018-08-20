@@ -1,0 +1,4 @@
+#:D:\Blog\Coding\C# 6 and .net core\Chapter16\src\Ch16_QuizWebApp\Ch16_QuizWebApp.xproj
+D:\Blog\Coding\C# 6 and .net core\Chapter16\src\Ch16_QuizWebApp\Ch16_QuizWebApp.xproj|D:\Blog\Coding\C# 6 and .net core\Chapter16\src\Ch16_QuizModels\Ch16_QuizModels.xproj
+D:\Blog\Coding\C# 6 and .net core\Chapter16\src\Ch16_QuizWebApp\Ch16_QuizWebApp.xproj|D:\Blog\Coding\C# 6 and .net core\Chapter16\src\Ch16_QuizRepository\Ch16_QuizRepository.xproj
+D:\Blog\Coding\C# 6 and .net core\Chapter16\src\Ch16_QuizRepository\Ch16_QuizRepository.xproj|D:\Blog\Coding\C# 6 and .net core\Chapter16\src\Ch16_QuizModels\Ch16_QuizModels.xproj

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>病人记录</title>
+</head>
+<body>
+    <div>
+        <h2>病人列表</h2>
+        <ul id="patients"></ul>
+    </div>  
+    <div>
+        <h2>根据id查找病人</h2>
+        <input type="text" id="patientId" value="" />
+        <input type="button" value="Search" onclick="find();" />
+        <p id="patient" /> 
+    </div> 
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+        var uri = "api/patient";
+        $(document).ready(function () {
+            $.getJSON(uri)
+                .done(function (data) {
+                    $.each(data, function (key, patient) {
+                        $('<li>', {
+                            text: formatPatientInfo(patient)
+                        }).appendTo($('#patients'));
+                    });
+                }); 
+        });
+
+        function formatPatientInfo(patient) {
+            if (patient && patient.name)
+                return patient.name +
+                    ', ' + patient.name +
+                    ': ' + patient.socialSecurityNumber;
+            else
+                return 'No patient information found.';
+        } 
+
+        function find() {
+            var id = $('#patientId').val();
+            $.getJSON(uri + '/' + id)
+                .done(function (data) {
+                    $('#patient').text(formatPatientInfo(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#patient').text('Error: ' + err);
+                });
+        } 
+    </script>
+</body>
+</html>

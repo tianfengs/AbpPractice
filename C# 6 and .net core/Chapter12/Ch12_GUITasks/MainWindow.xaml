@@ -1,0 +1,12 @@
+﻿<Window x:Class="Ch12_GUITasks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+       <StackPanel>
+            <Button Name="btnGetProducts" Click="BtnGetProducts_OnClick">获取产品</Button>
+            <TextBox>加在产品时在这里输入</TextBox>
+            <ListBox Name="lbProducts"></ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

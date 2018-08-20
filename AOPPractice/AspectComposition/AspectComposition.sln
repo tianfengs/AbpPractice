@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostSharpAspectRoles", "PostSharpAspectRoles\PostSharpAspectRoles.csproj", "{23288008-03CE-4C72-A1F7-106D70797018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxyComposeAspects", "DynamicProxyComposeAspects\DynamicProxyComposeAspects.csproj", "{7CE7062D-32AA-42DB-A6AB-7A86AD265D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopStructureMapWithCastleDynamicProxy", "AopStructureMapWithCastleDynamicProxy\AopStructureMapWithCastleDynamicProxy.csproj", "{6F1D1FC5-58A1-4B69-B2A0-0AC71F908254}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23288008-03CE-4C72-A1F7-106D70797018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23288008-03CE-4C72-A1F7-106D70797018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23288008-03CE-4C72-A1F7-106D70797018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23288008-03CE-4C72-A1F7-106D70797018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE7062D-32AA-42DB-A6AB-7A86AD265D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE7062D-32AA-42DB-A6AB-7A86AD265D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE7062D-32AA-42DB-A6AB-7A86AD265D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE7062D-32AA-42DB-A6AB-7A86AD265D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1D1FC5-58A1-4B69-B2A0-0AC71F908254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1D1FC5-58A1-4B69-B2A0-0AC71F908254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1D1FC5-58A1-4B69-B2A0-0AC71F908254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1D1FC5-58A1-4B69-B2A0-0AC71F908254}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Ch13_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ch13_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource rainBow}" Margin="0,0,-500,54">
+        <StackPanel Margin="0,0,1036,84">
+            <Button Name="btnClick" Width="764" Height="116" Click="btnClick_Click" Margin="0,0,-764,0" FontSize="48">点我!</Button>
+            <Button Name="btnClick2" Width="764" Height="116" Click="btnClick_Click" Margin="0,0,-764,0" FontSize="40">再点我!</Button>
+            <Slider Value="50" Minimum="0" Maximum="100" Width="200" Name="mySlider">
+            </Slider>
+             
+            <TextBlock Text="{Binding ElementName=mySlider,Path=Value}" VerticalAlignment="Center" Margin="10"></TextBlock>
+
+            <Slider Minimum="0" Width="400" Maximum="1000" Name="rotateSlider"></Slider>
+            <Rectangle Width="100" Height="100" Fill="Red">
+                <Rectangle.RenderTransform>
+                    <RotateTransform Angle="{Binding ElementName=rotateSlider,Path=Value}">
+
+                    </RotateTransform>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <TextBlock>使用滚动条旋转正方形</TextBlock>
+
+        </StackPanel>
+    </Grid>
+</Page>

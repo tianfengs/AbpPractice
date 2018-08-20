@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch11_Cryptography", "Ch11_Cryptography\Ch11_Cryptography.csproj", "{7E1B161E-A590-46C2-B7E4-D4A033CDA60F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptorTools", "CryptorTools\CryptorTools.csproj", "{5248C80F-F4CE-4EA6-B485-1158E4B8900C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch11_Hashing", "Ch11_Hashing\Ch11_Hashing.csproj", "{B5B9524D-05C9-49D7-90E4-D5D10E4F5EAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch11_Signing", "Ch11_Signing\Ch11_Signing.csproj", "{D722DF7D-BB61-4503-8C4E-43C7DDCD7262}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch11_Authentication", "Ch11_Authentication\Ch11_Authentication.csproj", "{E6CA0C29-4B4A-45DD-BFA7-AD7F41A1547A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch11_Exercise02", "Ch11_Exercise02\Ch11_Exercise02.csproj", "{8738DD40-94CD-4E06-8B46-6A6CF3D59D8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E1B161E-A590-46C2-B7E4-D4A033CDA60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1B161E-A590-46C2-B7E4-D4A033CDA60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1B161E-A590-46C2-B7E4-D4A033CDA60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1B161E-A590-46C2-B7E4-D4A033CDA60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5248C80F-F4CE-4EA6-B485-1158E4B8900C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5248C80F-F4CE-4EA6-B485-1158E4B8900C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5248C80F-F4CE-4EA6-B485-1158E4B8900C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5248C80F-F4CE-4EA6-B485-1158E4B8900C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B9524D-05C9-49D7-90E4-D5D10E4F5EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B9524D-05C9-49D7-90E4-D5D10E4F5EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B9524D-05C9-49D7-90E4-D5D10E4F5EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B9524D-05C9-49D7-90E4-D5D10E4F5EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D722DF7D-BB61-4503-8C4E-43C7DDCD7262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D722DF7D-BB61-4503-8C4E-43C7DDCD7262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D722DF7D-BB61-4503-8C4E-43C7DDCD7262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D722DF7D-BB61-4503-8C4E-43C7DDCD7262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CA0C29-4B4A-45DD-BFA7-AD7F41A1547A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CA0C29-4B4A-45DD-BFA7-AD7F41A1547A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CA0C29-4B4A-45DD-BFA7-AD7F41A1547A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CA0C29-4B4A-45DD-BFA7-AD7F41A1547A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8738DD40-94CD-4E06-8B46-6A6CF3D59D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8738DD40-94CD-4E06-8B46-6A6CF3D59D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8738DD40-94CD-4E06-8B46-6A6CF3D59D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8738DD40-94CD-4E06-8B46-6A6CF3D59D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

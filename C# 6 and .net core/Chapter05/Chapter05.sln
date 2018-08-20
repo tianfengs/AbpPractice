@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch05Debug", "Ch05Debug\Ch05Debug.csproj", "{5CCE19B2-D0B4-4FBF-A7AE-1D93D11EE64A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch05Monitoring", "Ch05Monitoring\Ch05Monitoring.csproj", "{B274E4C4-D649-43B2-87D4-8E0476E5305D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CCE19B2-D0B4-4FBF-A7AE-1D93D11EE64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCE19B2-D0B4-4FBF-A7AE-1D93D11EE64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCE19B2-D0B4-4FBF-A7AE-1D93D11EE64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCE19B2-D0B4-4FBF-A7AE-1D93D11EE64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B274E4C4-D649-43B2-87D4-8E0476E5305D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B274E4C4-D649-43B2-87D4-8E0476E5305D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B274E4C4-D649-43B2-87D4-8E0476E5305D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B274E4C4-D649-43B2-87D4-8E0476E5305D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿@model Ch14_AspNetCoreWebApp.Models.HomeIndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>NorthWind</h1>
+        <p class="lead">用户访问量：@Model.VisitorCount</p>
+        <h2>Prodcuts</h2>
+        <div id="newspaper">
+            <ul>
+                @foreach (var product in Model.Products)
+                {
+                    <li>
+                        <a asp-controller="Home" asp-action="ProductDetail" asp-route-id="@product.ProductId">@product.ProductName 需要 @product.UnitPrice.Value.ToString("C") 钱</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <form asp-action="ProductsThatCostMoreThan" method="get">
+        <input name="price" placeholder="Enter a product price" />
+        <input type="submit" />
+    </form>
+</div>

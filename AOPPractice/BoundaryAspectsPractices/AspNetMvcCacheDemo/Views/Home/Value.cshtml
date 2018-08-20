@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Value";
+}
+
+<form>
+    <p>
+        <strong>制造商：</strong>
+        @{
+            if (ViewData["makes"] != null)
+            {
+                @Html.DropDownList("makes", ViewData["makes"] as SelectList, new { @class = "select" });
+            }
+        }
+    </p>
+    <p>
+        <strong>年　份：</strong>
+        @{
+            if (ViewData["years"] != null)
+            {
+                @Html.DropDownList("years", ViewData["years"] as SelectList, new { @class = "select" });
+            }
+        }
+    </p>
+    <p>
+        <strong>条　件：</strong>
+        @{
+            if (ViewData["conditions"] != null)
+            {
+                @Html.DropDownList("conditions", ViewData["conditions"] as SelectList, new { @class = "select" });
+            }
+        }
+    </p>
+</form>
+
+<p>
+    <button id="getValue">获取Value</button>&nbsp;<label id="info"></label>
+</p>
+<table width="400" style="margin: 2px auto; border: 1px solid lightcoral;text-align: left">
+    <tbody>
+    <tr>
+        <td ><strong >Value:</strong></td> <td id="valueText"></td>
+    </tr>
+        <tr></tr>
+    <tr>
+        <td colspan="2"><strong>Cache:</strong></td>
+    </tr>
+        <tr></tr>
+        @{
+            foreach (string str in ViewData["Cache"] as List<string>)
+            {
+                <tr>
+                    <td colspan="2">@str</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@section script{
+    <script>
+        $(function() {
+            $('#getValue').click(function () {
+                var data = $('form').serialize();
+                var url = "@Url.Action("ValuePost")";
+                $.ajax({
+                    url: url,
+                    method: "post",
+                    data: data,
+                    beforeSend: function() {
+                        $("#info").text("获取中...");
+                    },
+                    success: function (res) {
+                        $("#info").text("获取成功！");
+                        $('#valueText').text(res);
+                    },
+                    error: function(xhr,status,err) {
+                        $("#info").text("获取失败！"+status+"***"+err);
+                    }
+                });
+              
+            });
+        });
+    </script>
+}
